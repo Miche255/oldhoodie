@@ -1,0 +1,602 @@
+
+/* Unificación de la clase material-symbols-outlined */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  }
+  
+  /* Fuente Red Hat Display */
+  .red-hat-display {
+    font-family: 'Red Hat Display', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  body, a, h2, p {
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  
+  /*----------------nav-bar-------------*/
+  
+  .old-hoddies {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    font-size: 20px;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 10px;
+    background-color: #153448;
+    color: #fff;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  a.old-hoddies {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+  }
+  
+  a.old-hoddies:hover {
+    color: #968027; /* Cambia el color del texto al pasar el mouse */
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4%;
+    justify-content: flex-end;
+  }
+  
+  .nav-links li {
+    margin-left: 8%;
+    white-space: nowrap;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    /* Ajusta el relleno para un espacio adecuado entre los elementos */
+    transition: color 0.3s;
+    /* Agrega una transición suave para el cambio de color */
+  }
+  
+  .nav-links li a:hover {
+    color: #968027;
+    /* Cambia el color del texto al pasar el mouse */
+  }
+  
+  /* Estilos para diferentes tamaños de pantalla */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+  
+    .nav-links {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      margin: 0 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .logo-container {
+      justify-items: center;
+      /* Centra los elementos dentro de .logo-container */
+    }
+  }
+  /*--------------------fin de nav-barr----------*/
+  /*------------formulario-------*/
+/* Estilos generales del formulario */
+.formulario {
+  position: relative;
+  background-color: #153448;
+  width: 30%;
+  padding: 16px;
+  border-radius: 0px;
+  display: grid;
+  gap: 16px;
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  border: 4px solid #b29521;
+  text-align: center; /* Centra el texto dentro del formulario */
+}
+
+/* Sombra para el formulario */
+.formulario::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5e511c20;
+  z-index: -1;
+  transform: translate(5%, 7%);
+}
+
+/* Agrupación de elementos del formulario */
+.formulario_grupo {
+  display: grid;
+  gap: 16px;
+}
+
+/* Estilo para grupos de inputs */
+.input_group {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.input_group_password {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 10px;
+}
+
+.input_group_password input[type="password"] {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.input_group input[type="text"],
+.input_group input[type="email"],
+.input_group input[type="password"],
+.input_group input[type="tel"] {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 0;
+}
+
+.input_group label {
+  justify-self: start;
+  margin-left: 2%;
+}
+
+/* Estilo para el grupo de checkboxes */
+.checkbox_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px; /* Ajusta el espacio entre el checkbox y la etiqueta */
+}
+
+/* Estilo para los checkboxes */
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #ccc; /* Color del borde cuando no está seleccionado */
+  border-radius: 0;
+  outline: none;
+  position: relative;
+  margin: 0;
+}
+
+/* Estilo para los checkboxes seleccionados */
+input[type="checkbox"]:checked {
+  background-color: #968027; /* Color dorado */
+}
+
+/* Marca de verificación personalizada */
+input[type="checkbox"]:checked::before {
+  color: rgb(215, 12, 12);
+  display: block;
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo para las etiquetas */
+.checkbox_group label {
+  font-size: 16px;
+  color: #fff; /* Ajusta el color del texto*/
+  cursor: pointer;
+}
+
+/* Estilos de los iconos */
+.inicial {
+  color: #7A9FB8;
+}
+
+.alternativo {
+  color: #a60808;
+}
+
+/* Estilos para el botón enviar y el enlace */
+.enviar {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  background-color: #7A9FB8;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.enviar:hover {
+  background-color: #968027;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Para ocultar los iconos inicialmente */
+.material-icons {
+  display: none;
+}
+
+/*------------fin de formulario-------*/
+  
+  /*---------------------menu----------------*/
+  
+  .icon-menu-open,
+  .icon-menu {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+  } /* para modificar los valores de los iconos*/
+  
+  button {
+      border: 0;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+    
+    .burger, /*este .burger genera el desplazamiento*/
+    .menu {
+      position: fixed;
+    }
+    
+    .burger {/*modifica la ubicacion del icono hamburguesa*/
+      z-index: 3;
+      top: 0;
+      left: 0;
+      display: grid;
+      place-items: center;
+      width: auto;
+      height: 10%;
+    }
+    .initial-icon,
+  .alternate-icon {
+      color: #968027;
+      font-size: 40px;
+  } /* Ajusta el tamaño y color de los iconos del menu. Los aspectos generales de los iconos*/
+    
+    .alternate-icon {
+      color: #ffffff;
+      display: none; /* Oculta el icono de menú desplegado por defecto */
+  }
+  
+  .open .burger .initial-icon {
+      display: none; /* Oculta el icono de menu cerrado cuando el menu esta abierto */
+  }
+  
+  .open .burger .alternate-icon {
+      display: inline; /* Muestra el icono de menu desplegado cuando el menu esta abierto */
+  }
+  
+  
+    
+    .menu {/*botonera, fragmento marron*/
+      z-index: 2;
+      top: 0;
+      left: 0;
+      display: grid;
+      place-items: center;
+      width: 25%;
+      height: 100%;
+      background: #5E511C;
+      translate: -100% 0;
+      transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+    
+    .menu nav {
+      opacity: 0;
+    }
+    
+    @keyframes menu-in {
+      0% {
+          clip-path: ellipse(60% 60% at 0% 50%);
+      }
+    
+      100% {
+          clip-path: ellipse(120% 120% at 0% 50%);
+      }
+    }
+    
+    body.open .menu {
+      opacity: 1;
+      visibility: visible;
+      translate: 0;
+      animation: menu-in 0.375s;
+    }
+    
+    body.open .menu nav {
+      opacity: 1;
+    }
+    
+    .menu nav:hover a {
+      opacity: 0.25;
+    }
+    
+    .menu nav a:hover {
+      opacity: 1;
+    }
+    
+    .menu nav {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      gap: 4%;
+    }
+    
+    .menu a {
+      position: relative;
+      color: #f9f9f9;
+      font-size: 150%;
+      padding: 20px 0;
+      width: 300px;
+      text-decoration: none;
+      transition: 0.4s;
+    } /* aca no se especifica font-family ya que esta definida en la etiqueta a y posteriormente arriba en el css de que tipo*/
+    
+    .menu a::before,
+    .menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      transition: 0.4s;
+    } /*posision de la linea y animacion del cambio de color*/
+    
+    .menu a::before {
+      opacity: 0;
+      background: rgb(255 255 255 / 20%);
+    }/*es la sombra gris de la linea de cada titulo del menu cuando pasa el menu*/ 
+  
+    .menu a::after {
+      transform: scaleX(0);
+      transform-origin: 0% 50%;
+      background: #7A9FB8;
+    }/*color que toma la linea cuando pasa el cursor*/
+    
+    .menu a:hover::before {
+      opacity: 1;
+    }
+    
+    .menu a:hover::after {
+      transform: scaleX(1);
+    }
+    
+    body.open .menu a {
+      animation: appear 0.25s backwards;
+    }
+    
+    @keyframes appear {
+      0% {
+          opacity: 0;
+          translate: -30px 0;
+      }
+    
+      100% {
+          opacity: 1;
+      }
+    }
+    /*------------------fin del menu--------*/
+  /*---------------------footer-------------*/
+  
+  .pie {
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    background: #7A9FB8;
+    padding-top: 60px;
+  }
+  
+  .icon-rocket-launch {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    position: relative;
+    color: #5e511c;
+    margin: 0 0 4% 0; /* Margen superior y laterales en 0, inferior en 4% */
+    padding-left: 0%;
+    font-size: 60px; /* Ajusta el tamaño del icono */
+  }
+  
+  footer {
+    position: relative;
+    margin: 0 30px;
+    color: rgb(255 255 255 / 50%);
+  }
+  
+  footer.top {
+    display: grid;
+    border-bottom: 2px solid #ffffff33;
+    padding-bottom: 20px;
+  }
+  
+  footer.bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 20px; /* Separación entre los pies de página */
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer.top .links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .links-column {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none; /* Quita el subrayado */
+  }
+  
+  footer a:hover {
+    color: #110E05; /* Cambia el color cuando el enlace es hover */
+  }
+  
+  footer h2 {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #153448;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .legal>a {
+    margin: 0 0 0 4px;
+  }
+  
+  .legal,
+  .copyright {
+    font-size: 12px;
+  }
+  
+  .legal>span {
+    margin-right: 10px;
+  }
+  
+  footer.top .socials {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    translate: -50% 0;
+    display: grid;
+    grid-auto-flow: column; /* Alinea los elementos en una fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 18px;
+    height: 56px;
+    justify-content: start; /* Alinea los iconos hacia la izquierda */
+  }
+  
+  
+  .socials-column :is(h2, p) {
+    display: none;
+  }
+  
+  @media (min-width: 400px) {
+    .links-column {
+      text-align: left;
+    }
+  
+    footer.top .links {
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: 50px;
+    }
+  
+    footer.bottom {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      text-align: left;
+    }
+  
+    footer.top .socials {
+      left: 0;
+      translate: 0;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    footer {
+      margin: 0 auto;
+      max-width: 580px;
+      padding: 0;
+    }
+  
+    footer.top .links {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    footer.top .socials {
+      position: static;
+      justify-content: start; /* Alinea los elementos al inicio en pantallas más grandes */
+    }
+  
+    footer.bottom {
+      grid-template-columns: auto 1fr auto;
+    }
+  
+    .socials-column :is(h2, p) {
+      display: block;
+    }
+  }
+  /*---------------fin del pie de pagina---------*/
+  
+  
