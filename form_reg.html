@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prueba</title>
+    <title>Old Hoddies - Registro</title>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="css/form_reg.css">
     <link rel="icon" href="svg/cohete-web.svg" type="image/svg"> <!-- Enlace al favicon -->
 </head>
@@ -19,7 +20,7 @@
     <!--nav-barr-->
     <nav class="navbar">
         <div class="logo-container">
-            <img src="svg/cohete-web.svg" alt="logo-principal" width="4%">
+            <img src="svg/cohete-web.svg" alt="logo-principal" width="50">
             <a href="index.html" class="old-hoddies">Old Hoddies</a>
         </div>
         <ul class="nav-links">
@@ -29,7 +30,7 @@
         </ul>
     </nav>
     <!--fin del nav-barr-->
-    
+
 
     <!--menu-->
     <section class="burger">
@@ -41,8 +42,8 @@
         <button class="burger" onclick="toggleMenu()">
             <span class="icon-menu-open material-symbols-outlined alternate-icon">menu_open</span>
         </button>
-        
-               
+
+
         <div class="menu">
             <nav>
                 <a href="index.html" style="animation-delay: 0.2s" class="red-hat-display">Inicio</a>
@@ -56,70 +57,83 @@
     </section>
     <!--fin de menu-->
     <br><br><br>
-    </body>
-    <!--formulario-->
-    <div class="formulario">
-        <form id="formulario" method="post" class="formulario1" onsubmit="validarFormulario(event)">
-            <div class="formulario_grupo" id="grupo_formulario">
-                <div class="input_group">
-                    <input type="text" id="form_name" name="form_name" placeholder="Nombre completo" class="formulario_input">
-                    <div id="mensaje1" class="msjvalidacion">
-                        <i id="valido1" class="material-icons"><span class="material-symbols-outlined inicial">done_all</span></i>
-                        <i id="error1" class="material-icons"><span class="material-symbols-outlined alternativo">error</span></i>
-                    </div>
-                </div>
-                <div class="input_group">
-                    <input type="text" id="form_ape" name="form_ape" placeholder="Apellido completo">
-                    <div id="mensaje2" class="msjvalidacion">
-                        <i id="valido2" class="material-icons"><span class="material-symbols-outlined inicial">done_all</span></i>
-                        <i id="error2" class="material-icons"><span class="material-symbols-outlined alternativo">error</span></i>
-                    </div>
-                </div>
-                <div class="input_group">
-                    <input type="email" id="form_mail" name="form_mail" placeholder="Mail">
-                    <div id="mensaje3" class="msjvalidacion">
-                        <i id="valido3" class="material-icons"><span class="material-symbols-outlined inicial">done_all</span></i>
-                        <i id="error3" class="material-icons"><span class="material-symbols-outlined alternativo">error</span></i>
-                    </div>
-                </div>
-                <div class="input_group input_group_password">
-                    <div>
-                        <input type="password" id="form_pass" name="form_pass" placeholder="Ingrese contraseña">
-                        <br><br>
-                        <input type="password" id="re-form_pass" name="re-form_pass" placeholder="Reingrese contraseña">
-                    </div>
-                    <div id="mensaje4" class="msjvalidacion">
-                        <i id="valido4" class="material-icons"><span class="material-symbols-outlined inicial">done_all</span></i>
-                        <i id="error4" class="material-icons"><span class="material-symbols-outlined alternativo">error</span></i>
-                    </div>
-                </div>
-                <div class="input_group">
-                    <input type="tel" id="form_tel" name="form_tel" placeholder="Ingrese su número telefónico">
-                    <div id="mensaje5" class="msjvalidacion">
-                        <i id="valido5" class="material-icons"><span class="material-symbols-outlined inicial">done_all</span></i>
-                        <i id="error5" class="material-icons"><span class="material-symbols-outlined alternativo">error</span></i>
-                    </div>
-                </div>
-                <div class="input_group checkbox_group">
-                    <input type="checkbox" id="form_news" name="form_news">
-                    <label for="form_news">Recibir noticias</label>
-                </div>
-                <div class="input_group checkbox_group">
-                    <input type="checkbox" id="form_term" name="form_term">
-                    <label for="form_term">Acepta nuestros términos y condiciones</label>
-                    <div id="mensaje6" class="msjvalidacion">
-                        <i id="valido6" class="material-icons"><span class="material-symbols-outlined inicial">done_all</span></i>
-                        <i id="error6" class="material-icons"><span class="material-symbols-outlined alternativo">error</span></i>
-                    </div>
-                </div>
-                <div class="input_group">
-                    <input type="submit" value="Crear Cuenta" class="enviar">
+</body>
+<!--formulario-->
+<div class="formulario">
+    <form id="formulario" method="post" class="formulario1" onsubmit="validarFormulario(event)">
+        <div class="formulario_grupo" id="grupo_formulario">
+            <div class="input_group">
+                <input type="text" id="form_name" name="form_name" placeholder="Nombre completo"
+                    class="formulario_input">
+                <div id="mensaje1" class="msjvalidacion">
+                    <i id="valido1" class="material-icons"><span
+                            class="material-symbols-outlined inicial">done_all</span></i>
+                    <i id="error1" class="material-icons"><span
+                            class="material-symbols-outlined alternativo">error</span></i>
                 </div>
             </div>
-        </form>
-    </div>
-    <br><br><br>
-    <!--fin de formulario-->
+            <div class="input_group">
+                <input type="text" id="form_ape" name="form_ape" placeholder="Apellido completo">
+                <div id="mensaje2" class="msjvalidacion">
+                    <i id="valido2" class="material-icons"><span
+                            class="material-symbols-outlined inicial">done_all</span></i>
+                    <i id="error2" class="material-icons"><span
+                            class="material-symbols-outlined alternativo">error</span></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <input type="email" id="form_mail" name="form_mail" placeholder="Mail">
+                <div id="mensaje3" class="msjvalidacion">
+                    <i id="valido3" class="material-icons"><span
+                            class="material-symbols-outlined inicial">done_all</span></i>
+                    <i id="error3" class="material-icons"><span
+                            class="material-symbols-outlined alternativo">error</span></i>
+                </div>
+            </div>
+            <div class="input_group input_group_password">
+                <div>
+                    <input type="password" id="form_pass" name="form_pass" placeholder="Ingrese contraseña">
+                    <br><br>
+                    <input type="password" id="re-form_pass" name="re-form_pass" placeholder="Reingrese contraseña">
+                </div>
+                <div id="mensaje4" class="msjvalidacion">
+                    <i id="valido4" class="material-icons"><span
+                            class="material-symbols-outlined inicial">done_all</span></i>
+                    <i id="error4" class="material-icons"><span
+                            class="material-symbols-outlined alternativo">error</span></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <input type="tel" id="form_tel" name="form_tel" placeholder="Ingrese su número telefónico">
+                <div id="mensaje5" class="msjvalidacion">
+                    <i id="valido5" class="material-icons"><span
+                            class="material-symbols-outlined inicial">done_all</span></i>
+                    <i id="error5" class="material-icons"><span
+                            class="material-symbols-outlined alternativo">error</span></i>
+                </div>
+            </div>
+            <div class="input_group checkbox_group">
+                <input type="checkbox" id="form_news" name="form_news">
+                <label for="form_news">Recibir noticias</label>
+            </div>
+            <div class="input_group checkbox_group">
+                <input type="checkbox" id="form_term" name="form_term">
+                <label for="form_term">Acepta nuestros términos y condiciones</label>
+                <div id="mensaje6" class="msjvalidacion">
+                    <i id="valido6" class="material-icons"><span
+                            class="material-symbols-outlined inicial">done_all</span></i>
+                    <i id="error6" class="material-icons"><span
+                            class="material-symbols-outlined alternativo">error</span></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <input type="submit" value="Crear Cuenta" class="enviar">
+            </div>
+        </div>
+    </form>
+</div>
+<br><br><br>
+<!--fin de formulario-->
 <!--pie de pagina-->
 <section class="pie">
     <footer class="top">
@@ -134,7 +148,7 @@
                 <a href="pagina-buzos.html">Pantalones</a>
             </div>
             <div class="links-column">
-                <h2 href="#">Links</h2>
+                <h2>Links</h2>
                 <a href="pagina-buzos.html">Tienda</a>
                 <a href="preguntasfrecuentes.html">Ayuda</a>
                 <a href="carrito.html">Carrito</a>
@@ -149,10 +163,8 @@
                 <div class="socials">
                     <a href="#" class="social-link"><img src="svg/facebook.svg" alt="Facebook"
                             style="height: 24px;"></a>
-                    <a href="#" class="social-link"><img src="svg/insta.svg" alt="Instagram"
-                            style="height: 24px;"></a>
-                    <a href="#" class="social-link"><img src="svg/tik-tok.svg" alt="tik-tok"
-                            style="height: 24px;"></a>
+                    <a href="#" class="social-link"><img src="svg/insta.svg" alt="Instagram" style="height: 24px;"></a>
+                    <a href="#" class="social-link"><img src="svg/tik-tok.svg" alt="tik-tok" style="height: 24px;"></a>
                 </div>
             </div>
         </div>
@@ -169,4 +181,5 @@
 <!--fin de pie de pagina-->
 <script src="js/form_reg.js"></script>
 </body>
+
 </html>
