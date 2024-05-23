@@ -693,7 +693,7 @@ footer.top .socials {
 }
 /*---------------fin del pie de pagina---------*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 380px) {
   .navbar {
     grid-template-columns: 1fr;
     justify-content: center;
