@@ -523,9 +523,198 @@ footer.top .socials {
     grid-template-columns: auto 1fr auto;
   }
 
-  .socials-column :is(h2, p) {
+  .socials-column :is(h2, p) {/* General styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body, html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+    }
+    
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    
+    /* Navbar styles */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #153448;
+        color: #fff;
+        width: 100%;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    a.old-hoddies {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        transition: color 0.3s;
+    }
+    
+    a.old-hoddies:hover {
+        color: #968027;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-links li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        transition: color 0.3s;
+    }
+    
+    .nav-links li a:hover {
+        color: #968027;
+    }
+    
+    /* Burger menu styles */
+    .burger {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 3;
+    }
+    
+    .burger-button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .initial-icon, .alternate-icon {
+        font-size: 40px;
+    }
+    
+    .alternate-icon {
+        display: none;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #5E511C;
+        overflow-x: hidden;
+        transition: width 0.4s;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu nav {
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .menu a {
+        color: #f9f9f9;
+        font-size: 1.5em;
+        text-decoration: none;
+        transition: opacity 0.4s;
+    }
+    
+    .menu a:hover {
+        opacity: 0.75;
+    }
+    
+    .menu.open {
+        width: 100%;
+    }
+    
+    .menu.open nav {
+        opacity: 1;
+    }
+    
+    /* Toggle menu */
+    body.open .menu {
+        width: 75%;
+    }
+    
+    body.open .burger .initial-icon {
+        display: none;
+    }
+    
+    body.open .burger .alternate-icon {
+        display: inline;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+        }
+    
+        .nav-links {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .menu {
+            width: 100%;
+        }
+    
+        body.open .menu {
+            width: 100%;
+        }
+    }
+    
     display: block;
   }
 }
 /*---------------fin del pie de pagina---------*/
 
+@media screen and (max-width: 400px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: none; /* Oculta la lista de enlaces */
+  }
+
+  .menu {
+    width: 100%; /* Hace que el menú ocupe todo el ancho de la pantalla */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .menu nav {
+    gap: 1rem; /* Reduce el espacio entre los enlaces */
+  }
+
+  .menu a {
+    font-size: 1rem; /* Reduce el tamaño de fuente de los enlaces */
+    width: 100%; /* Hace que los enlaces ocupen todo el ancho del menú */
+    padding: 1rem 0; /* Ajusta el relleno para hacer los enlaces más grandes */
+  }
+}
